@@ -14,6 +14,7 @@ export default function createConfig(options, ...userConfigs) {
       ...options,
     },
     {
+      ignores: ["src/db/migrations/*", "public/*"],
       rules: {
         "ts/consistent-type-definitions": ["error", "type"],
         "no-console": ["warn"],
@@ -35,6 +36,6 @@ export default function createConfig(options, ...userConfigs) {
         ],
       },
     },
-    ...userConfigs
+    ...userConfigs,
   );
 }

@@ -1,4 +1,3 @@
-/* eslint-disable next/no-img-element */
 "use client";
 
 import { BellIcon, BluetoothIcon, CreditCardIcon, DownloadIcon, EyeIcon, FileCodeIcon, FileIcon, FileTextIcon, FolderIcon, FolderOpenIcon, FolderSearchIcon, HelpCircleIcon, KeyboardIcon, LanguagesIcon, LayoutIcon, LogOutIcon, MailIcon, MonitorIcon, MoonIcon, MoreHorizontalIcon, MoreVerticalIcon, PaletteIcon, PlusIcon, SaveIcon, SettingsIcon, ShieldIcon, SunIcon, UserIcon } from "lucide-react";

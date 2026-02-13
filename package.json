@@ -2,11 +2,15 @@
   "name": "www.insa.com",
   "version": "0.0.1",
   "private": true,
+  "packageManager": "pnpm@10.4.1",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "lint-s": "turbo lint",
+    "lint:st": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky"
   },
@@ -21,16 +25,12 @@
     "turbo": "^2.8.1",
     "typescript": "5.9.3"
   },
-  "packageManager": "pnpm@10.4.1",
-  "engines": {
-    "node": ">=20"
-  },
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild"
     ]
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": "eslint --"
+    "**/*.{js,ts,tsx}": ["eslint --"]
   }
 }
