@@ -11,10 +11,10 @@ export default function createConfig(options, ...userConfigs) {
         semi: true,
         quotes: "double",
       },
+      ignores: ["src/db/migrations/*", "public/*", ".pnpm-store/*"],
       ...options,
     },
     {
-      ignores: ["src/db/migrations/*", "public/*"],
       rules: {
         "ts/consistent-type-definitions": ["error", "type"],
         "no-console": ["warn"],
